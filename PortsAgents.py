@@ -5,11 +5,11 @@ import pandas as pd
 sheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQp1YVzX0T3bqdtBw7wVMspdhocnc0Db7FmC-WiI-o203YyoZMtJlytRGcC7727Utz7Aw08Xr1JmZbk/pub?gid=0&single=true&output=csv"
 df = pd.read_csv(sheet_url)
 
-# Custom CSS for styling
+# Custom CSS for modern UI
 st.markdown("""
     <style>
         .main {
-            background-color: #f7fafd;
+            background-color: #f0f4f8;
         }
         .stChatMessage {
             border-radius: 12px;
@@ -32,9 +32,18 @@ st.markdown("""
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .sidebar .sidebar-content {
+            background-color: #e6f2ff;
         }
     </style>
 """, unsafe_allow_html=True)
+
+# Sidebar with logo and navigation
+st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Globe_icon.svg/1024px-Globe_icon.svg.png", width=100)
+st.sidebar.title("LGL Navigation")
+st.sidebar.markdown("Navigate through AREA → COUNTRY → PORT to view logistics details.")
 
 # Initialize session state
 if "messages" not in st.session_state:
