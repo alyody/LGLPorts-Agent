@@ -128,18 +128,18 @@ elif st.session_state.stage == "details":
 <div class="info-card">
     <h4>📍 Port Details</h4>
     <ul>
-        <li><strong>AREA:</strong> {row['AREA']}</li>
-        <li><strong>COUNTRY:</strong> {row['COUNTRY']}</li>
-        <li><strong>PORT:</strong> {row['PORT']}</li>
-        <li><strong>IMPORT:</strong> {row.get('IMPORT', 'N/A')}</li>
-        <li><strong>EXPORT:</strong> {row.get('EXPORT', 'N/A')}</li>
-        <li><strong>TRANSHIPMET:</strong> {row.get('TRANSHIPMET', 'N/A')}</li>
-        <li><strong>AGENT COMPANY:</strong> {row.get('AGENT COMPANY', 'N/A')}</li>
-        <li><strong>LGL AGENT NAME:</strong> {row.get('LGL AGENT NAME', 'N/A')}</li>
-        <li><strong>MOBILE:</strong> {row.get('MOBILE', 'N/A')}</li>
-        <li><strong>EMAIL:</strong> {row.get('EMAIL', 'N/A')}</li>
-        <li><strong>LGL WEBSITE:</strong> {row.get('LGL WEBSITE', 'N/A')}</li>
-        <li><strong>Notes:</strong> {row.get('Notes', 'None')}</li>
+        <li>🌍 <strong>AREA:</strong> {row['AREA']}</li>
+        <li>🇨🇳 <strong>COUNTRY:</strong> {row['COUNTRY']}</li>
+        <li>⚓ <strong>PORT:</strong> {row['PORT']}</li>
+        <li>📥 <strong>IMPORT:</strong> {row.get('IMPORT', 'N/A')}</li>
+        <li>📤 <strong>EXPORT:</strong> {row.get('EXPORT', 'N/A')}</li>
+        <li>🔁 <strong>TRANSHIPMET:</strong> {row.get('TRANSHIPMET', 'N/A')}</li>
+        <li>🏢 <strong>AGENT COMPANY:</strong> {row.get('AGENT COMPANY', 'N/A')}</li>
+        <li>👤 <strong>LGL AGENT NAME:</strong> {row.get('LGL AGENT NAME', 'N/A')}</li>
+        <li>📞 <strong>MOBILE:</strong> {row.get('MOBILE', 'N/A')}</li>
+        <li>✉️ <strong>EMAIL:</strong> {row.get('EMAIL', 'N/A')}</li>
+        <li>🌐 <strong>LGL WEBSITE:</strong> {row.get('LGL WEBSITE', 'N/A')}</li>
+        <li>📝 <strong>Notes:</strong> {row.get('Notes', 'None')}</li>
     </ul>
 </div>
 """
